@@ -9,9 +9,9 @@ app.set('view engine' , 'ejs')
 
 app.use(express.json())
 
-app.get('/', (req , res) => {
-    res.jsonp({name: "Rizwan Ali"})
-})
+// app.get('/', (req , res) => {
+//     res.jsonp({name: "Rizwan Ali"})
+// })
 
 // app.get('/about', (req , res) => {
 //   if(req.accepts('html')){
@@ -26,9 +26,13 @@ app.get('/', (req , res) => {
 // })
 
 
-app.get('/about', (req , res) => {
-  res.send(req.headers.host)
-})
+// app.get('/about', (req , res) => {
+//   res.send(req.headers.host)
+// })
 
+
+app.post('/about', (req , res) => {
+  res.send()
+})
 
 
